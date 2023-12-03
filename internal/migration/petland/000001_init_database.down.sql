@@ -1,0 +1,9 @@
+drop table if exists categories;
+drop table if exists permissions;
+drop table if exists roles;
+drop table if exists role_permissions;
+drop table if exists users;
+drop table if exists user_roles;
+drop table if exists places;
+drop table if exists floors;
+drop table if exists images;
