@@ -32,6 +32,10 @@ func Connect(cfg config.Env) *gorm.DB {
 	return db
 }
 
+func GetDB() *gorm.DB {
+	return db
+}
+
 func dsn(cfg config.Env) string {
 	return fmt.Sprintf("%s:%s@%s/%s?",
 		cfg.MySqlUsername,

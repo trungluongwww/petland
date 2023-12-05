@@ -6,7 +6,7 @@ export DDL_DIR=./internal/migration/petland
 export MYSQL_URL="mysql://root:123456@tcp(127.0.0.1:33061)/petland?"
 
 run:
-	go run main.go
+	go run cmd/app/main.go
 
 # make create-migration name=file_name
 create-migration:
