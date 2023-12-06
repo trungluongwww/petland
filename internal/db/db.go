@@ -37,7 +37,7 @@ func GetDB() *gorm.DB {
 }
 
 func dsn(cfg config.Env) string {
-	return fmt.Sprintf("%s:%s@%s/%s?",
+	return fmt.Sprintf("%s:%s@%s/%s?parseTime=true",
 		cfg.MySqlUsername,
 		cfg.MySqlPassword,
 		cfg.MySqlProtocol,
